@@ -28,37 +28,51 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <h1>
+<a name="yarii-responsive-images-for-all-" class="anchor" href="#yarii-responsive-images-for-all-"><span class="octicon octicon-link"></span></a>YARII, Responsive Images for All !</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<hr><h2>
+<a name="--beta-launch-early-october-2013--" class="anchor" href="#--beta-launch-early-october-2013--"><span class="octicon octicon-link"></span></a><em>- BETA LAUNCH EARLY OCTOBER 2013 -</em>
+</h2>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<hr><h2>
+<a name="what-is-it-" class="anchor" href="#what-is-it-"><span class="octicon octicon-link"></span></a>What is it ?</h2>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p><strong>YARII is a way to implement responsive images without any img markup changes, thanks to server-side modules.</strong></p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p>YARII detects <strong>screen resolution, bandwith and HD screens</strong> to serve the exact image needed.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>On top of that, a JQuery script ensure beautiful <strong>progressive enhancement on js-able browsers</strong>.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p><em>YARII has not been entirely created from scratch. Some parts of code are forked from these great projects :</em></p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<ul>
+<li><a href="https://github.com/MattWilcox/Adaptive-Images" title="MattWilcox/Adaptative-Images">MattWilcox/Adaptative-Images</a></li>
+<li><a href="https://github.com/adamdbradley/foresight.js/" title="adamdbradley/foresight.js">adamdbradley/foresight.js</a></li>
+<li><a href="https://github.com/drewbrolik/Responsive-Img" title="drewbrolik/Responsive-Img">drewbrolik/Responsive-Img</a></li>
+</ul><p><em>Go check them, they really are inspiring projects.</em></p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<h2>
+<a name="how-does-it-work-" class="anchor" href="#how-does-it-work-"><span class="octicon octicon-link"></span></a>How does it work ?</h2>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>YARII's action is divided in 2 steps: </p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<ol>
+<li><p>YARII intercepts images requests on server side and send an appropriate image to the client depending on  its <strong>resolution</strong> (also detecting <strong>HD screens)</strong> and its <strong>bandwidth</strong>.</p></li>
+<li><p>YARII starts reloading full quality image as <strong>background task</strong>, <strong>if necessary</strong> (i.e. image quality too low for the client). When load is complete, the low quality image get replaced, optionally with animation.</p></li>
+</ol><h2>
+<a name="so-what-about-browsers-without-javascript-enabled-" class="anchor" href="#so-what-about-browsers-without-javascript-enabled-"><span class="octicon octicon-link"></span></a>So what about browsers without Javascript enabled ?</h2>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>YARII is based on a <strong>Progressive Enhancement</strong> philosophy. Recent publications stated that images should be sent to non-js browser in low quality by default (mobile first behavior).</p>
+
+<p>YARII let you choose wether you want to sent low quality images or original images to non-js browsers.</p>
+
+<p>But just remember that <strong>YARII is able to detect searchbots like Google's</strong>, so that the images sent to them are always in full quality, even if you choose mobile first approach. Your SEO is safe !</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Coming very soon... :)</p>
         </section>
 
         <aside id="sidebar">
