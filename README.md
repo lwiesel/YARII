@@ -1,6 +1,6 @@
-# YARII, Responsive Images for All! #
+# YARII, Responsive Images! #
 ----------
-## *-BETA LAUNCH THIS WEEK! -* ##
+### *- ALPHA VERSION - USE WITH CAUTION -* ###
 ----------
 ## What is it ? ##
 **YARII is a way to implement responsive images without any img markup changes, thanks to server-side modules.**
@@ -66,7 +66,7 @@ Then, add these lines in your `.htaccess` file. Don't forget to adapt the path t
 
 If you don't have access to your `.htaccess` or if you want to select the folders where YARII applies, just create one in your image directory, assuming you regrouped your images in one location. Otherwise, just create one file per directory.
 
-You can configure YARII by changing the values in `yarii-config.php`:
+<!--You can configure YARII by changing the values in `yarii-config.php`:-->
 **Soon : the "How to configure YARII" page**
 <!-- See the [how to configure YARII](http://path/to/yarii/config/section "How to configure YARII") section. -->
 
@@ -78,8 +78,10 @@ Add links to the folowing javascript files:
 - `yarii-third.js` (background task reload of full quality images)
 
 To enable full quality images reloading, add this line at the end of the page, before `</body>`:
-
-    $('img').yarii();
+    
+	<script>
+    	$('img').yarii();
+    </script>
 
 That's it ! You're done !
 
@@ -87,7 +89,9 @@ That's it ! You're done !
 **Soon : the "How to configure YARII" page**
 
 ## Changelog ##
+0.0.1
 
+- Beta version
 
 ## License ##
 Soon
