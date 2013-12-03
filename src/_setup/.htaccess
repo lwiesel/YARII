@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+  RewriteEngine On
+
+  # YARII -----------------------------------------------------------------------------------
+
+  # Add any directories you wish to omit from YARII on a new line, as follows:
+  # RewriteCond %{REQUEST_URI} !ignore-this-directory
+  # RewriteCond %{REQUEST_URI} !and-ignore-this-directory-too
+
+  # RewriteCond %{REQUEST_URI} !assets
+
+  # don't apply the AI behaviour to images inside YARII's cache folder:
+  RewriteCond %{REQUEST_URI} !yarii-cache
+
+  # Send any GIF, JPG, or PNG request that IS NOT stored inside one of the above directories
+  # to yarii.php so we can select appropriately versions
+  RewriteRule \.(?:jpe?g|gif|png)$ libs/yarii/yarii.php
+
+  # END YARII -------------------------------------------------------------------------------
+</IfModule>
