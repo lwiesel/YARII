@@ -1,6 +1,6 @@
-# YARII, Responsive Images for All ! #
+# YARII, Responsive Images for All! #
 ----------
-## *-BETA LAUNCH EARLY OCTOBER 2013-* ##
+## *-BETA LAUNCH THIS WEEK! -* ##
 ----------
 ## What is it ? ##
 **YARII is a way to implement responsive images without any img markup changes, thanks to server-side modules.**
